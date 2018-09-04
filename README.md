@@ -310,3 +310,5 @@
       ${({baz}) => baz && Bar};
     `;
     ```
+### TODO
+ - Create standards for prop types, stories and the atomic library usage
