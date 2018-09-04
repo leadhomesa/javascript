@@ -99,22 +99,22 @@
 
     ```jsx
     // bad
-    <Foo superLongParam="bar"
-         anotherSuperLongParam="baz" />
+    <Foo superLongParam='bar'
+         anotherSuperLongParam='baz' />
 
     // good
     <Foo
-      superLongParam="bar"
-      anotherSuperLongParam="baz"
+      superLongParam='bar'
+      anotherSuperLongParam='baz'
     />
 
     // if props fit in one line then keep it on the same line
-    <Foo bar="bar" />
+    <Foo bar='bar' />
 
     // children get indented normally
     <Foo
-      superLongParam="bar"
-      anotherSuperLongParam="baz"
+      superLongParam='bar
+      anotherSuperLongParam='baz'
     >
       <Quux />
     </Foo>
@@ -228,7 +228,7 @@
     ```
     // bad
     render() {
-      return <Food foo="bar">
+      return <Food foo='bar'>
                <Burger />
              </Food>;
     }
@@ -236,7 +236,7 @@
     // good
     render() {
       return (
-        <Food foo="bar">
+        <Food foo='bar'>
           <Burger />
         </Food>
       );
@@ -246,22 +246,22 @@
 - Always self-close tags that have no children: [`react/self-closing-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md)
     ```
     // bad
-    <Foo variant="stuff"></Foo>
+    <Foo variant='stuff'></Foo>
     
     // good
-    <Foo variant="stuff" />
+    <Foo variant='stuff' />
     ```
 - If your component has multi-line properties, close its tag on a new line. [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
     ```
     // bad
     <Foo
-      bar="bar"
-      baz="baz" />
+      bar='bar'
+      baz='baz' />
     
     // good
     <Foo
-      bar="bar"
-      baz="baz"
+      bar='bar'
+      baz='baz'
     />
     ```
 ### Methods
