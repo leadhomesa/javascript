@@ -1,6 +1,20 @@
 # ![Leadhome](https://www.leadhome.co.za/assets/images/logo.89cf16dfc4c9a7aaa2e15c574b9458f8.svg) Leadhome
-## JavaScript style guide
+## JavaScript style guide 
 > A mostly reasonable approach to React, Styled Components and ES6
+## Table of Contents
+
+  1. [Basic Rules](#basic-rules)
+  1. [Class vs Stateless](#class-vs-stateless)
+  1. [Naming](#naming)
+  1. [Alignment](#alignment)
+  1. [Quotes](#quotes)
+  1. [Spacing](#spacing)
+  1. [Props](#props)
+  1. [Parentheses](#parentheses)
+  1. [Tags](#tags)
+  1. [Methods](#methods)
+  1. [Styled Components](#styled-components)
+  1. [TODO](#todo)
 
 ### Basic Rules
 - File names must be all lowercase and may use dashes (-), but no additional punctuation
@@ -312,3 +326,4 @@
     ```
 ### TODO
  - Create standards for prop types, stories and the atomic library usage
+ - Create ES lint configs 
