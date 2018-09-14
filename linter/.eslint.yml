@@ -1,0 +1,63 @@
+parser: babel-eslint
+
+extends:
+- standard
+- standard-react
+
+env:
+  browser: true
+  node: true
+  jest: true
+
+plugins:
+- react
+- jsx-a11y
+- import
+- jest
+- graphql
+- unicorn
+
+rules:
+  # JS
+  jsx-quotes: ["error", "prefer-single"]
+  quotes: "off" #issue fixing this atm
+  semi: ["error", "always"]
+  curly: ["error", "multi"]
+  indent: ["error", 2]
+  no-tabs: "off"
+  space-before-function-paren: "off"
+  prefer-arrow-callback: ["error"]
+  camelcase: ["error", { "properties": "always" }]
+  no-multi-spaces: ["error"]
+
+  # React
+  react/prop-types: "off"
+  react/prefer-es6-class: ["error", "always"]
+  react/prefer-stateless-function: "warn"
+  react/jsx-pascal-case: "error"
+  react/jsx-indent: ["error", 2]
+  react/jsx-indent-props: ["error", 2]
+  react/self-closing-comp: ["error", { "component": true, "html": true }]
+  react/jsx-closing-bracket-location: ["error", "tag-aligned"]
+  react/jsx-wrap-multilines: ["error", {
+    "declaration": "parens-new-line",
+    "assignment": "parens-new-line",
+    "return": "parens-new-line",
+    "arrow": "parens-new-line",
+    "condition": "ignore",
+    "logical": "ignore",
+    "prop": "ignore"
+  }]
+  react/jsx-boolean-value: ["error"]
+  react/jsx-tag-spacing: ["error", { "beforeSelfClosing": "always" }]
+
+  # Etc
+  unicorn/filename-case: ["error", {"case": "kebabCase"}]
+
+settings:
+  import/resolver:
+    node:
+      moduleDirectory:
+      - node_modules
+      - src
+
